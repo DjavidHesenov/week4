@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="form.css" />
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    </head>
+    <body>
+        <div class="cart">
+
+        <form id="survey-form">
+
+            <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">A simple survey form</p>
+            </header>
+            
+            <div>
+            <label class="desc" id="name-label" for="name">Name</label>
+            <div>
+                <input id="name" name="name" type="text" class="field text fn" value="" size="8" tabindex="1" placeholder="Your Name">
+            </div>
+            </div>
+            
+            <div>
+            <label class="desc" id="email-label" for="email">
+                Email
+            </label>
+            <div>
+                <input id="email" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="3" placeholder="Your Email"> 
+            </div>
+            </div>
+            
+            <div>
+            <label class="desc" id="number-label" for="number">
+                Age
+            </label>
+            <div>
+                <input id="number" name="number" type="number" min="1" max="100" placeholder="Age"> 
+            </div>
+            </div>
+
+            <div>
+                <label class="desc" id="dropdown" for="dropdown-opt">
+                    Select a Language
+                </label>
+                <div>
+                <select id="dropdown-opt" name="dropdown-opt" class="field select medium" tabindex="11"> 
+                    <option value="JS">JS</option>
+                    <option value="Python">Python</option>
+                    <option value="TS">TS</option>
+                </select>
+                </div>
+            </div>
+
+            <div>
+                <fieldset>
+                
+                    <legend id="radiob" class="desc">
+                    Choose Gender
+                    </legend>
+                    
+                    <div>
+                        <div>
+                            <input id="FieldMale" name="Field5" type="radio" value="Male" tabindex="5" checked="checked">
+                            <label class="choice" for="FieldMale">Male</label>
+                        </div>
+                    <div>
+                        <input id="FieldFemale" name="Field5" type="radio" value="Female" tabindex="6">
+                        <label class="choice" for="FieldFemale">Female</label>
+                    </div>
+                    <div>
+                        <input id="FieldOther" name="Field5" type="radio" value="Other" tabindex="7">
+                        <label class="choice" for="FieldOther">Other</label>
+                    </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend id="title6" class="desc">
+                    Which animals are your favourite?
+                    </legend>
+                    <div>
+                    <div>
+                        <input id="FieldDogs" name="Field6" type="checkbox" value="Dogs" tabindex="8">
+                        <label class="choice" for="FieldDogs">Dogs</label>
+                    </div>
+                    <div>
+                        <input id="FieldCats" name="Field7" type="checkbox" value="Cats" tabindex="9">
+                        <label class="choice" for="FieldCats">Cats</label>
+                    </div>
+                    <div>
+                        <input id="FieldOtherAnimals" name="Field8" type="checkbox" value="Others" tabindex="10">
+                        <label class="choice" for="FieldOtherAnimals">Others</label>
+                    </span>
+                    </div>
+                </fieldset>
+            </div>    
+
+            <div>
+            <label class="desc" id="titlelast" for="Fieldlast">
+                Comments
+            </label>
+            
+            <div>
+                <textarea id="Fieldlast" name="Fieldlast" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+            </div>
+            </div>
+            
+            <div>
+                <div>
+                    <input id="submit" name="submit" type="submit" value="Submit">
+                </div>
+            </div>
+            
+        </form>
+        </div>
+
+    </body>
+</html>
